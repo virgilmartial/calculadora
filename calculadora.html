@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="calculadorabonita.css">
+</head>
+<body>
+   <main>
+    <div  class=" calculadora draggable" draggable="true">
+       
+        <div class="agarradero">
+            <img src="img/move_icon.png" alt="">
+        </div>
+        <div class="screen-container">
+            <span class="on off"></span>
+            <input  type="text" name="pantalla" id="pantalla"  readonly placeholder="0">
+        </div>
+        <div class="">
+            <input type="button" name="onoff" id="onoff" value="ON/OFF" onclick="onOff()"> 
+            <input type="button" name="back" id="back" value="<" onclick="back()"> 
+        </div>
+        <div class="">
+            <input type="button" name="numsiete" id="numsiete" value="7" onclick="pulsar(7)">
+            <input type="button" name="numocho" id="numocho" value="8"onclick="pulsar(8)">
+            <input type="button" name="numnueve" id="numnueve" value="9"onclick="pulsar(9)">
+            <input type="button" name="sumar" id="sumar" value="+"onclick="pulsar('+')">
+        </div>
+        <div class="">
+            <input type="button" name="numcuatro" id="numcuatro" value="4"onclick="pulsar(4)">
+            <input type="button" name="numcinco" id="numcinco" value="5"onclick="pulsar(5)">
+            <input type="button" name="numseis" id="numseis" value="6"onclick="pulsar(6)">
+            <input type="button" name="restar" id="restar" value="-"onclick="pulsar('-')">
+        </div>
+        <div class="">
+            <input type="button" name="numuno" id="numuno" value="1"onclick="pulsar(1)">
+            <input type="button" name="numdos" id="numdos" value="2"onclick="pulsar(2)">
+            <input type="button" name="numtres" id="numtres" value="3"onclick="pulsar(3)">
+            <input type="button" name="multiplicar" id="multiplicar" value="x"onclick="pulsar('*')">
+        </div>
+        <div class="">
+            <input type="button" name="punto" id="punto" value="."onclick="pulsar('.')">
+            <input type="button" name="numcero" id="numcero" value="0"onclick="pulsar(0)">
+            <input type="button" name="reset" id="reset" value="AC"onclick="f_reset()">
+            <input type="button" name="dividir" id="dividir" value="/"onclick="pulsar('/')">
+        </div>
+        
+        <div class="">
+            <input type="button" name="igual" id="igual" value="="onclick="igual()">
+        </div>
+    </div>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
